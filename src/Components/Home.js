@@ -12,7 +12,7 @@ const Home = () => {
     const receiverName = "Faiz Ahmed Khan";
     const description = "For Touheed Masjid Sehri Arragements";
 
-    const pplink = `upi://pay?pa=${receiverUPI}@id&pn=${receiverName}&am=${amount}&cu=INR&tn=${description}`;
+    const pplink = `upi://pay?pa=${receiverUPI}&pn=${receiverName}&am=${amount}&cu=INR&tn=${description}`;
     // Generate the deep link
     // var deepLink = 'phonepe://upi?pa=' + receiverUPI + '&pn=Recipient%20Name&am=' + amount + '&cu=INR';
 
