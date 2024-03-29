@@ -7,14 +7,17 @@ import { SiPhonepe } from "react-icons/si";
 const Home = () => {
   function redirectToPhonePe() {
     // Replace 'receiverUPI' and 'amount' with actual values
-    var receiverUPI = '9110726570@ybl';
-    var amount = '100'; // Amount in rupees
+    const receiverUPI = '9492457193@ybl';
+    const amount = '100'; // Amount in rupees
+    const receiverName = "Faiz Ahmed Khan";
+    const description = "For Touheed Masjid Sehri Arragements";
 
+    const pplink = `upi://pay?pa=${receiverUPI}@id&pn=${receiverName}&am=${amount}&cu=INR&tn=${description}`;
     // Generate the deep link
-    var deepLink = 'phonepe://upi?pa=' + receiverUPI + '&pn=Recipient%20Name&am=' + amount + '&cu=INR';
+    // var deepLink = 'phonepe://upi?pa=' + receiverUPI + '&pn=Recipient%20Name&am=' + amount + '&cu=INR';
 
     // Redirect the user to PhonePe
-    window.location.href = deepLink;
+    window.location.href = pplink;
 }
 
   return (
