@@ -7,7 +7,7 @@ import { SiPhonepe } from "react-icons/si";
 const Home = () => {
   function redirectToPhonePe() {
     // Replace 'receiverUPI' and 'amount' with actual values
-    var receiverUPI = '9492457193@ybl';
+    var receiverUPI = '9110726570@ybl';
     var amount = '100'; // Amount in rupees
 
     // Generate the deep link
